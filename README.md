@@ -2,9 +2,9 @@
 ## VS Code Jasmine snippets
 -------------------
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
+<!-- [![Version](https://vsmarketplacebadge.apphb.com/version/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/xabikos.JasmineSnippets.svg)](https://marketplace.visualstudio.com/items?itemName=xabikos.JasmineSnippets) -->
 
 This extension contains code snippets for [Jasmine][jasmine] test framework and is based on the awesome [sublime-jasmine][sublime-jusmine] package by [@NicoSantangelo][NicoSantangelo].
 

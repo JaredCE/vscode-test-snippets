@@ -101,5 +101,5 @@ Below is a list of all available snippets and the triggers of each one. The **â†
 [jasmine]: http://jasmine.github.io
 [sublime-jusmine]: https://github.com/NicoSantangelo/sublime-jasmine
 [NicoSantangelo]: https://github.com/NicoSantangelo
-[xabikos]: [https://github.com/xabikos/]
-[original]: [https://github.com/xabikos/vscode-jasmine]
+[xabikos]: https://github.com/xabikos/
+[original]: https://github.com/xabikos/vscode-jasmine

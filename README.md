@@ -8,6 +8,8 @@
 
 This extension contains code snippets for [Jasmine][jasmine] test framework and is based on the awesome [sublime-jasmine][sublime-jusmine] package by [@NicoSantangelo][NicoSantangelo].
 
+[Original][original] credit should goto [xabikos][xabikos] for writing this extension.
+
 ## Installation
 
 In order to install an extension you need to launch the Command Palette (Ctrl + Shift + P or Cmd + Shift + P) and type Extensions.
@@ -99,3 +101,5 @@ Below is a list of all available snippets and the triggers of each one. The **â†
 [jasmine]: http://jasmine.github.io
 [sublime-jusmine]: https://github.com/NicoSantangelo/sublime-jasmine
 [NicoSantangelo]: https://github.com/NicoSantangelo
+[xabikos]: [https://github.com/xabikos/]
+[original]: [https://github.com/xabikos/vscode-jasmine]

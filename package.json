@@ -3,7 +3,7 @@
   "description": "Code snippets for JavaScript Jasmine test framework in ES6 syntax",
   "version": "1.3.0",
   "displayName": "Jasmine code snippets",
-  "publisher": "Jared Evans",
+  "publisher": "JaredE",
   "icon": "images/jasmine.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {

@@ -1,8 +1,8 @@
 {
-  "name": "JasmineSnippets",
-  "description": "Code snippets for JavaScript Jasmine test framework in ES6 syntax",
-  "version": "1.3.0",
-  "displayName": "Jasmine code snippets",
+  "name": "javascript-test-snippets",
+  "description": "Code snippets for JavaScript testing frameworks in ES6 syntax",
+  "version": "1.4.0",
+  "displayName": "JavaScript Test Snippets",
   "publisher": "JaredE",
   "icon": "images/jasmine.png",
   "license": "SEE LICENSE IN LICENSE.md",

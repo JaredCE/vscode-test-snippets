@@ -1,0 +1,116 @@
+{
+    "afterAllTimeout": {
+		"prefix": "aat",
+		"body": "afterAll(function() {\n\t$0\n}, 5);",
+		"description": "afterAll function with timeout is called once after the full spec runs",
+		"scope": "source.js"
+	},
+    "afterEachTimeout": {
+		"prefix": "aet",
+		"body": "afterEach(function() {\n\t$0\n}, 5);",
+		"description": "afterEach function with timeout is called once after each spec",
+		"scope": "source.js"
+	},
+    "beforeAllTimeout": {
+		"prefix": "bat",
+		"body": "beforeAll(function() {\n\t$0\n}, 5);",
+		"description": "beforeAll function with timeout is called once before the full spec runs",
+		"scope": "source.js"
+	},
+    "beforeEachTimeout": {
+		"prefix": "bet",
+		"body": "beforeEach(function() {\n\t$0\n}, 5);",
+		"description": "beforeEach function with timeout is called once before each spec",
+		"scope": "source.js"
+	},
+    "expect": {
+		"prefix": "exp",
+		"body": "expect($1)$0",
+		"description": "takes a value, called the actual.",
+		"scope": "source.js"
+	},
+    "expectAsync": {
+		"prefix": "expa",
+		"body": "await expectAsync($1)$0",
+		"description": "asynchronously takes a value, called the actual.",
+		"scope": "source.js"
+	},
+    "fail": {
+        "prefix": "fa",
+		"body": "fail($0)",
+		"description": "mark a spec as failed.",
+		"scope": "source.js"
+    },
+	"focusDescribe": {
+		"prefix": "fdesc",
+		"body": "fdescribe('${1:Name of the group}', () => {\n\t$0\n});",
+		"description": "focused describe",
+		"scope": "source.js"
+	},
+    "focusedIt": {
+		"prefix": "fit",
+		"body": "fit('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "focused it",
+		"scope": "source.js"
+	},
+    "pending": {
+		"prefix": "pen",
+		"body": "pending($0)",
+		"description": "Mark a spec as pending",
+		"scope": "source.js"
+	},
+    "setSpecProperty": {
+		"prefix": "ssp",
+		"body": "setSpecProperty({$0:key}, '{$1:value}')",
+		"description": "Sets a user-defined property that will be provided to reporters as part of the properties field of SpecResult",
+		"scope": "source.js"
+	},
+    "setSuiteProperty": {
+		"prefix": "ssup",
+		"body": "setSuiteProperty({$0:key}, '{$1:value}')",
+		"description": "Sets a user-defined property that will be provided to reporters as part of the properties field of SuiteResult",
+		"scope": "source.js"
+	},
+    "spyOn": {
+		"prefix": "so",
+		"body": "spyOn(${1:object}, '${2:method}')$3;$0",
+		"description": "Install a spy onto an existing object.",
+		"scope": "source.js"
+	},
+    "spyOnAllFunctions": {
+		"prefix": "soaf",
+		"body": "spyOn(${1:object}, ${2:false})$3;$0",
+		"description": "Installs spies on all writable and configurable properties of an object.",
+		"scope": "source.js"
+	},
+    "spyOnProperty get": {
+		"prefix": "spg",
+		"body": "spyOnProperty(${1:object}, '${2:method}', 'get')$3;$0",
+		"description": "Install a spy on a property onto an existing object with get accessType",
+		"scope": "source.js"
+	},
+	"spyOnProperty set": {
+		"prefix": "sps",
+		"body": "spyOnProperty(${1:object}, '${2:method}', 'set')$3;$0",
+		"description": "Install a spy on a property onto an existing object with set accessType",
+		"scope": "source.js"
+	},
+    "xDescribe": {
+		"prefix": "xdesc",
+		"body": "xdescribe('${1:Name of the group}', () => {\n\t$0\n});",
+		"description": "these suites and any specs inside them are skipped when run and thus their results will not appear in the results",
+		"scope": "source.js"
+	},
+	"xIt": {
+		"prefix": "xit",
+		"body": "xit('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "pending specs do not run, but their names will show up in the results as pending",
+		"scope": "source.js"
+	},
+	"xItAsync": {
+		"prefix": "xait",
+		"body": "xit('${1:should behave asynchronously...}', async function() {\n\t$0\n});",
+		"description": "pending asynchronous specs do not run, but their names will show up in the results as pending",
+		"scope": "source.js"
+	}
+}

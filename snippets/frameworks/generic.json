@@ -1,0 +1,68 @@
+{
+    "afterAll": {
+		"prefix": "aa",
+		"body": "afterAll(function() {\n\t$0\n});",
+		"description": "afterAll function is called once after the full spec runs",
+		"scope": "source.js"
+	},
+    "afterAllAsync": {
+		"prefix": "aaa",
+		"body": "afterAll(async function() {\n\t$0\n});",
+		"description": "async afterAll function is called once after the full spec runs",
+		"scope": "source.js"
+	},
+    "afterEach": {
+		"prefix": "ae",
+		"body": "afterEach(function() {\n\t$0\n});",
+		"description": "afterEach function is called once after each spec",
+		"scope": "source.js"
+	},
+    "afterEachAsync": {
+		"prefix": "aea",
+		"body": "afterEach(async function() {\n\t$0\n});",
+		"description": "async afterEach function is called once after each spec",
+		"scope": "source.js"
+	},
+    "beforeAll": {
+		"prefix": "ba",
+		"body": "beforeAll(function() {\n\t$0\n});",
+		"description": "beforeAll function is called once before the full spec runs",
+		"scope": "source.js"
+	},
+    "beforeAllAsync": {
+		"prefix": "baa",
+		"body": "beforeAll(async function() {\n\t$0\n});",
+		"description": "async beforeAll function is called once before the full spec runs",
+		"scope": "source.js"
+	},
+    "beforeEach": {
+		"prefix": "be",
+		"body": "beforeEach(function() {\n\t$0\n});",
+		"description": "beforeEach function is called once before each spec",
+		"scope": "source.js"
+	},
+    "beforeEachAsync": {
+		"prefix": "bea",
+		"body": "beforeEach(async function() {\n\t$0\n});",
+		"description": "async beforeEach function is called once before each spec",
+		"scope": "source.js"
+	},
+	"describe": {
+		"prefix": "desc",
+		"body": "describe('${1:Name of the group}', function () {\n\t$0\n});",
+		"description": "creates a suite of tests",
+		"scope": "source.js"
+	},
+    "it": {
+		"prefix": "it",
+		"body": "it('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "creates a test method",
+		"scope": "source.js"
+	},
+	"itAsync": {
+		"prefix": "ait",
+		"body": "it('${1:should behave asynchronously...}', async function() {\n\t$0\n});",
+		"description": "creates an async test method",
+		"scope": "source.js"
+	}
+}

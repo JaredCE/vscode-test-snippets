@@ -10,7 +10,7 @@
     "url": "https://github.com/JaredCE/vscode-test-snippets"
   },
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^1.14.0"
   },
   "main": "./extension.js",
   "categories": [

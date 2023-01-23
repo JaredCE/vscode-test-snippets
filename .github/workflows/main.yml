@@ -23,4 +23,4 @@ jobs:
           # Use the registry API at this base URL
           registryUrl: https://marketplace.visualstudio.com
           # Set this option to "true" to package your extension but do not publish it.
-          dryRun: true
+          dryRun: false

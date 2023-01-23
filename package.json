@@ -1,7 +1,7 @@
 {
   "name": "javascript-test-snippets",
   "description": "Code snippets for JavaScript testing frameworks (mocha, jasmine and jest) in ES6 syntax",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "JavaScript Test Snippets",
   "publisher": "JaredE",
   "license": "SEE LICENSE IN LICENSE.md",

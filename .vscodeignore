@@ -1,3 +1,5 @@
 .gitignore
+.github/**
+.vscode/**
 LICENSE
 CHANGELOG.md

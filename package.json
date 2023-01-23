@@ -1,39 +1,67 @@
 {
   "name": "javascript-test-snippets",
-  "description": "Code snippets for JavaScript testing frameworks in ES6 syntax",
-  "version": "1.4.0",
+  "description": "Code snippets for JavaScript testing frameworks (mocha, jasmine and jest) in ES6 syntax",
+  "version": "0.0.1",
   "displayName": "JavaScript Test Snippets",
   "publisher": "JaredE",
-  "icon": "images/jasmine.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JaredAAT/vscode-jasmine"
+    "url": "https://github.com/JaredCE/vscode-test-snippets"
   },
   "engines": {
     "vscode": "0.10.x"
   },
+  "main": "./extension.js",
   "categories": [
+    "Programming Languages",
     "Snippets"
   ],
+  "keywords": [
+    "javascript",
+    "mocha",
+    "jest",
+    "jasmine",
+    "testing"
+  ],
   "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/snippets.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/snippets.json"
+    "configuration": {
+      "title": "Javascript Test Frameworks",
+      "properties": {
+        "javascript-test-snippets.framework": {
+          "id": "javascript-test-snippets.framework",
+          "type": "string",
+          "description": "Choose the JavaScript testing framework you most often use",
+          "default": "mocha",
+          "enum": [
+            "mocha",
+            "jasmine",
+            "jest"
+          ]
+        },
+        "javascript-test-snippets.quoteStyle": {
+          "id": "javascript-test-snippets.quoteStyle",
+          "description": "Choose your preferred quoteStyle",
+          "type": "string",
+          "default": "\"",
+          "enum": [
+            "\"",
+            "'",
+            "`"
+          ]
+        }
       }
-    ]
-  }
+    }
+  },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript"
+  ],
+  "devDependencies": {
+    "@types/vscode": "^1.74.0"
+  },
+  "dependencies": {
+    "lodash.merge": "^4.6.2"
+  },
+  "pricing": "Free"
 }

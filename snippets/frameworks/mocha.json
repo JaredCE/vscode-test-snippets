@@ -1,0 +1,26 @@
+{
+    "describeOnly": {
+		"prefix": "desco",
+		"body": "describe.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "You can use describe.only if you want to run only one describe block",
+		"scope": "source.js"
+	},
+    "describeSkip": {
+		"prefix": "descsk",
+		"body": "describe.skip('{$0:name}', function () {\n\t$1\n});",
+		"description": "You can use describe.skip if you do not want to run a particular describe block",
+		"scope": "source.js"
+	},
+    "itOnly": {
+		"prefix": "ito",
+		"body": "it.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "When you are debugging a large test file, you will often only want to run a subset of tests. You can use .only to specify which tests are the only ones you want to run in that test file.",
+		"scope": "source.js"
+	},
+    "itSkip": {
+		"prefix": "itsk",
+		"body": "it.skip('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "If you want to skip running this test, but you don't want to delete this code, you can use test.skip to specify some tests to skip.",
+		"scope": "source.js"
+	}
+}

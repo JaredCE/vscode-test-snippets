@@ -1,0 +1,21 @@
+name: Deploy Extension
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish VS Code Extension
+        # You may pin to the exact commit or the version.
+        # uses: HaaLeo/publish-vscode-extension@c1a0486c5a3eed24e8c21d4e37889a7c4c60c443
+        uses: HaaLeo/publish-vscode-extension@v1
+        with:
+          # Personal access token
+          pat: ${{secrets.VSCODE_PUBLISHER_ACCESS_TOKEN}}
+          # Use the registry API at this base URL
+          registryUrl: https://marketplace.visualstudio.com
+          # Set this option to "true" to package your extension but do not publish it.
+          dryRun: true

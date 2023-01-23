@@ -1,0 +1,440 @@
+{
+    "afterAllTimeout": {
+		"prefix": "aat",
+		"body": "afterAll(function() {\n\t$0\n}, 5);",
+		"description": "afterAll function with timeout is called once after the full spec runs",
+		"scope": "source.js"
+	},
+    "afterEachTimeout": {
+		"prefix": "aet",
+		"body": "afterEach(function() {\n\t$0\n}, 5);",
+		"description": "afterEach function with timeout is called once after each spec",
+		"scope": "source.js"
+	},
+    "beforeAllTimeout": {
+		"prefix": "bat",
+		"body": "beforeAll(function() {\n\t$0\n}, 5);",
+		"description": "beforeAll function with timeout is called once before the full spec runs",
+		"scope": "source.js"
+	},
+    "beforeEachTimeout": {
+		"prefix": "bet",
+		"body": "beforeEach(function() {\n\t$0\n}, 5);",
+		"description": "beforeEach function with timeout is called once before each spec",
+		"scope": "source.js"
+	},
+    "describeEach": {
+		"prefix": "desce",
+		"body": "describe.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use describe.each if you keep duplicating the same test suites with different data",
+		"scope": "source.js"
+	},
+    "describeOnly": {
+		"prefix": "desco",
+		"body": "describe.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "You can use describe.only if you want to run only one describe block",
+		"scope": "source.js"
+	},
+    "describeOnlyEach": {
+		"prefix": "desceo",
+		"body": "describe.only.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use describe.only.each if you want to only run specific tests suites of data driven tests.",
+		"scope": "source.js"
+	},
+    "describeSkip": {
+		"prefix": "descsk",
+		"body": "describe.skip('{$0:name}', function () {\n\t$1\n});",
+		"description": "You can use describe.skip if you do not want to run a particular describe block",
+		"scope": "source.js"
+	},
+    "describeSkipEach": {
+		"prefix": "descse",
+		"body": "describe.skip.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use describe.skip.each if you want to stop running a suite of data driven tests.",
+		"scope": "source.js"
+	},
+    "expect": {
+        "prefix": "exp",
+        "body": "expect($0)",
+        "description": "The `expect` function is used every time you want to test a value",
+        "scope": "source.js"
+    },
+    "expect.extend": {
+        "prefix": "expe",
+        "body": "expect.extend({$0})",
+        "description": "You can use `expect.extend` to add your own matchers to Jest",
+        "scope": "source.js"
+    },
+    "expect.anything": {
+        "prefix": "expa",
+        "body": "expect.anything()",
+        "description": "`expect.anything()` matches anything but `null` or `undefined`.",
+        "scope": "source.js"
+    },
+    "expect.any": {
+        "prefix": "exy",
+        "body": "expect.any($0)",
+        "description": "`expect.any(constructor)` matches anything that was created with the given constructor",
+        "scope": "source.js"
+    },
+    "expect.arrayContaining": {
+        "prefix": "ac",
+        "body": "expect.arrayContaining(${0:array})",
+        "description": "`expect.arrayContaining(array)` matches a received array which contains all of the elements in the expected array.",
+        "scope": "source.js"
+    },
+    "expect.assertions": {
+        "prefix": "ass",
+        "body": "expect.assertions(${0:2})",
+        "description": "`expect.assertions(number)` verifies that a certain number of assertions are called during a test.",
+        "scope": "source.js"
+    },
+    "expect.hasAssertions": {
+        "prefix": "ha",
+        "body": "expect.hasAssertions()",
+        "description": "`expect.hasAssertions()` verifies that at least one assertion is called during a test.",
+        "scope": "source.js"
+    },
+    "expect.not.arrayContaining": {
+        "prefix": "nac",
+        "body": "expect.not.arrayContaining(${0:array})",
+        "description": "`expect.not.arrayContaining(array)` matches a received array which does not contain all of the elements in the expected array.",
+        "scope": "source.js"
+    },
+    "expect.not.objectContaining(object)": {
+        "prefix": "noc",
+        "body": "expect.not.objectContaining({${0:object}})",
+        "description": "`expect.not.objectContaining(object)` matches any received object that does not recursively match the expected properties. ",
+        "scope": "source.js"
+    },
+    "expect.not.stringContaining": {
+        "prefix": "nsc",
+        "body": "expect.not.stringContaining($0)",
+        "description": "`expect.not.stringContaining(string)` matches the received value if it is not a string or if it is a string that does not contain the exact expected string.",
+        "scope": "source.js"
+    },
+    "expect.not.stringMatching": {
+        "prefix": "nsm",
+        "body": "expect.not.stringMatching($0)",
+        "description": "`expect.not.stringMatching(string | regexp)` matches the received value if it is not a string or if it is a string that does not match the expected string or regular expression.",
+        "scope": "source.js"
+    },
+    "expect.objectContaining": {
+        "prefix": "oc",
+        "body": "expect.objectContaining({${0:object}})",
+        "description": "`expect.objectContaining(object)` matches any received object that recursively matches the expected properties. ",
+        "scope": "source.js"
+    },
+    "expect.stringContaining": {
+        "prefix": "sc",
+        "body": "expect.stringContaining($0)",
+        "description": "`expect.stringContaining(string)` matches the received value if it is a string that contains the exact expected string.",
+        "scope": "source.js"
+    },
+    "expect.stringMatching": {
+        "prefix": "sm",
+        "body": "expect.stringMatching($0)",
+        "description": "`expect.stringMatching(string | regexp)` matches the received value if it is a string that matches the expected string or regular expression.",
+        "scope": "source.js"
+    },
+    "expect.addSnapshotSerializer": {
+        "prefix": "ass",
+        "body": "expect.addSnapshotSerializer($0)",
+        "description": "You can call `expect.addSnapshotSerializer` to add a module that formats application-specific data structures.",
+        "scope": "source.js"
+    },
+    "itOnly": {
+		"prefix": "ito",
+		"body": "it.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "When you are debugging a large test file, you will often only want to run a subset of tests. You can use .only to specify which tests are the only ones you want to run in that test file.",
+		"scope": "source.js"
+	},
+    "itSkip": {
+		"prefix": "itsk",
+		"body": "it.skip('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "If you want to skip running this test, but you don't want to delete this code, you can use test.skip to specify some tests to skip.",
+		"scope": "source.js"
+	},
+    "not": {
+        "prefix": "not",
+        "body": ".not",
+        "description": "If you know how to test something, `.not` lets you test its opposite.",
+        "scope": "source.js"
+    },
+    "resolves": {
+        "prefix": "res",
+        "body": ".resolves",
+        "description": "Use `resolves` to unwrap the value of a fulfilled promise so any other matcher can be chained.",
+        "scope": "source.js"
+    },
+    "rejects": {
+        "prefix": "rej",
+        "body": ".rejects",
+        "description": "Use `.rejects` to unwrap the reason of a rejected promise so any other matcher can be chained.",
+        "scope": "source.js"
+    },
+    "test": {
+		"prefix": "te",
+		"body": "test('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "creates a test method",
+		"scope": "source.js"
+	},
+	"testAsync": {
+		"prefix": "tea",
+		"body": "test('${1:should behave asynchronously...}', async function() {\n\t$0\n});",
+		"description": "creates an async test method",
+		"scope": "source.js"
+	},
+    "testEach": {
+		"prefix": "tee",
+		"body": "test.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use test.each if you keep duplicating the same test with different data. test.each allows you to write the test once and pass data in.",
+		"scope": "source.js"
+	},
+    "testOnly": {
+		"prefix": "teo",
+		"body": "test.only('{$0:name}', function () {\n\t$1\n});",
+		"description": "When you are debugging a large test file, you will often only want to run a subset of tests. You can use .only to specify which tests are the only ones you want to run in that test file.",
+		"scope": "source.js"
+	},
+    "testOnlyEach": {
+		"prefix": "teoe",
+		"body": "test.only.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use test.only.each if you want to only run specific tests with different test data.",
+		"scope": "source.js"
+	},
+    "testSkip": {
+		"prefix": "tsk",
+		"body": "test.skip('${1:should behave...}', function() {\n\t$0\n});",
+		"description": "If you want to skip running this test, but you don't want to delete this code, you can use test.skip to specify some tests to skip.",
+		"scope": "source.js"
+	},
+    "testSkipEach": {
+		"prefix": "tske",
+		"body": "test.skip.each({$0:array})('{$1:name}', function () {\n\t$2\n});",
+		"description": "Use test.skip.each if you want to stop running a collection of data driven tests.",
+		"scope": "source.js"
+	},
+    "testToDo": {
+		"prefix": "ttodo",
+		"body": "test.todo('{$0:should behave...}');",
+		"description": "Use test.skip.each if you want to stop running a collection of data driven tests.",
+		"scope": "source.js"
+	},
+    "toBe": {
+        "prefix": "tb",
+        "body": ".toBe($0)",
+        "description": "Use `.toBe` to compare primitive values or to check referential identity of object instances.",
+        "scope": "source.js"
+    },
+    "toHaveBeenCalled": {
+        "prefix": "tbc",
+        "body": ".toHaveBeenCalled()",
+        "description": "Use `.toHaveBeenCalled` to ensure that a mock function got called.",
+        "scope": "source.js"
+    },
+    "toHaveBeenCalledTimes": {
+        "prefix": "bct",
+        "body": ".toHaveBeenCalledTimes(${0:2})",
+        "description": "Use `.toHaveBeenCalledTimes` to ensure that a mock function got called exact number of times.",
+        "scope": "source.js"
+    },
+    "toHaveBeenCalledWith": {
+        "prefix": "bcw",
+        "body": ".toHaveBeenCalledWith(arg1, arg2, ...)",
+        "description": "Use `.toHaveBeenCalledWith` to ensure that a mock function was called with specific arguments.",
+        "scope": "source.js"
+    },
+    "toHaveBeenLastCalledWith": {
+        "prefix": "bclw",
+        "body": ".toHaveBeenLastCalledWith(arg1, arg2, ...)",
+        "description": "If you have a mock function, you can use `.toHaveBeenLastCalledWith` to test what arguments it was last called with.",
+        "scope": "source.js"
+    },
+    "toHaveBeenNthCalledWith": {
+        "prefix": "bncw",
+        "body": ".toHaveBeenNthCalledWith(${0:2}, arg1, arg2, ....)",
+        "description": "If you have a mock function, you can use `.toHaveBeenNthCalledWith` to test what arguments it was nth called with.",
+        "scope": "source.js"
+    },
+    "toHaveReturned": {
+        "prefix": "hr",
+        "body": ".toHaveReturned()",
+        "description": "If you have a mock function, you can use `.toHaveReturned` to test that the mock function successfully returned (i.e., did not throw an error) at least one time.",
+        "scope": "source.js"
+    },
+    "toHaveReturnedTimes": {
+        "prefix": "hrt",
+        "body": ".toHaveReturnedTimes(${0:2})",
+        "description": "Use `.toHaveReturnedTimes` to ensure that a mock function returned successfully (i.e., did not throw an error) an exact number of times.",
+        "scope": "source.js"
+    },
+    "toHaveReturnedWith": {
+        "prefix": "hrw",
+        "body": ".toHaveReturnedWith($0)",
+        "description": "Use `.toHaveReturnedWith` to ensure that a mock function returned a specific value.",
+        "scope": "source.js"
+    },
+    "toHaveLastReturnedWith": {
+        "prefix": "hlrw",
+        "body": ".toHaveLastReturnedWith($0)",
+        "description": "Use `.toHaveLastReturnedWith` to test the specific value that a mock function last returned. If the last call to the mock function threw an error, then this matcher will fail no matter what value you provided as the expected return value.",
+        "scope": "source.js"
+    },
+    "toHaveNthReturnedWith": {
+        "prefix": "tnrw",
+        "body": ".toHaveNthReturnedWith(${0:2}, $1)",
+        "description": "Use `.toHaveNthReturnedWith` to test the specific value that a mock function returned for the nth call.",
+        "scope": "source.js"
+    },
+    "toHaveLength": {
+        "prefix": "hl",
+        "body": ".toHaveLength(number)",
+        "description": "Use `.toHaveLength` to check that an object has a `.length` property and it is set to a certain numeric value.",
+        "scope": "source.js"
+    },
+    "toHaveProperty": {
+        "prefix": "hp",
+        "body": ".toHaveProperty({$0:string}, $1)",
+        "description": "Use `.toHaveProperty` to check if property at provided reference `keyPath` exists for an object.",
+        "scope": "source.js"
+    },
+    "toBeCloseTo": {
+        "prefix": "bclt",
+        "body": ".toBeCloseTo($0, $1)",
+        "description": "Use `toBeCloseTo` to compare floating point numbers for approximate equality.",
+        "scope": "source.js"
+    },
+    "toBeDefined": {
+        "prefix": "tbd",
+        "body": ".toBeDefined()",
+        "description": "Use `.toBeDefined` to check that a variable is not undefined.",
+        "scope": "source.js"
+    },
+    "toBeFalsy": {
+        "prefix": "tbf",
+        "body": ".toBeFalsy()",
+        "description": "Use `.toBeFalsy` when you don't care what a value is and you want to ensure a value is false in a boolean context.",
+        "scope": "source.js"
+    },
+    "toBeGreaterThan": {
+        "prefix": "gt",
+        "body": ".toBeGreaterThan($0)",
+        "description": "Use `toBeGreaterThan` to compare `received > expected` for number or big integer values.",
+        "scope": "source.js"
+    },
+    "toBeGreaterThanOrEqual": {
+        "prefix": "gte",
+        "body": ".toBeGreaterThanOrEqual($0)",
+        "description": "Use `toBeGreaterThanOrEqual` to compare `received >= expected` for number or big integer values.",
+        "scope": "source.js"
+    },
+    "toBeLessThan": {
+        "prefix": "lt",
+        "body": ".toBeLessThan($0)",
+        "description": "Use `toBeLessThan` to compare `received < expected` for number or big integer values.",
+        "scope": "source.js"
+    },
+    "toBeLessThanOrEqual": {
+        "prefix": "lte",
+        "body": ".toBeLessThanOrEqual($0)",
+        "description": "Use `toBeLessThanOrEqual` to compare `received <= expected` for number or big integer values.",
+        "scope": "source.js"
+    },
+    "toBeInstanceOf": {
+        "prefix": "bio",
+        "body": ".toBeInstanceOf($0)",
+        "description": "Use `.toBeInstanceOf(Class)` to check that an object is an instance of a class.",
+        "scope": "source.js"
+    },
+    "toBeNull": {
+        "prefix": "bnu",
+        "body": ".toBeNull()",
+        "description": "`.toBeNull()` is the same as `.toBe(null)` but the error messages are a bit nicer.",
+        "scope": "source.js"
+    },
+    "toBeTruthy": {
+        "prefix": "btr",
+        "body": ".toBeTruthy()",
+        "description": "Use `.toBeTruthy` when you don't care what a value is and you want to ensure a value is true in a boolean context.",
+        "scope": "source.js"
+    },
+    "toBeUndefined": {
+        "prefix": "bund",
+        "body": ".toBeUndefined()",
+        "description": "Use `.toBeUndefined` to check that a variable is undefined.",
+        "scope": "source.js"
+    },
+    "toBeNaN": {
+        "prefix": "bnan",
+        "body": ".toBeNaN()",
+        "description": "Use `.toBeNaN` when checking a value is `NaN`.",
+        "scope": "source.js"
+    },
+    "toContain": {
+        "prefix": "tcon",
+        "body": ".toContain($0)",
+        "description": "Use `.toContain` when you want to check that an item is in an array.",
+        "scope": "source.js"
+    },
+    "toContainEqual": {
+        "prefix": "tce",
+        "body": ".toContainEqual($0)",
+        "description": "Use `.toContainEqual` when you want to check that an item with a specific structure and values is contained in an array.",
+        "scope": "source.js"
+    },
+    "toEqual": {
+        "prefix": "te",
+        "body": ".toEqual($0)",
+        "description": "Use `.toEqual` to compare recursively all properties of object instances (also known as 'deep' equality).",
+        "scope": "source.js"
+    },
+    "toMatch": {
+        "prefix": "tm",
+        "body": ".toMatch($0)",
+        "description": "Use `.toMatch` to check that a string matches a regular expression.",
+        "scope": "source.js"
+    },
+    "toMatchObject": {
+        "prefix": "tmo",
+        "body": ".toMatchObject($0)",
+        "description": "Use `.toMatchObject` to check that a JavaScript object matches a subset of the properties of an object.",
+        "scope": "source.js"
+    },
+    "toMatchSnapshot": {
+        "prefix": "tms",
+        "body": ".toMatchSnapshot(propertyMatchers?, hint?)",
+        "description": "This ensures that a value matches the most recent snapshot.",
+        "scope": "source.js"
+    },
+    "toMatchInlineSnapshot": {
+        "prefix": "tmis",
+        "body": ".toMatchInlineSnapshot($0, $1)",
+        "description": "Ensures that a value matches the most recent snapshot.",
+        "scope": "source.js"
+    },
+    "toStrictEqual": {
+        "prefix": "tse",
+        "body": ".toStrictEqual($0)",
+        "description": "Use `.toStrictEqual` to test that objects have the same types as well as structure.",
+        "scope": "source.js"
+    },
+    "toThrow": {
+        "prefix": "ttr",
+        "body": ".toThrow({$0:err})",
+        "description": "Use `.toThrow` to test that a function throws when it is called",
+        "scope": "source.js"
+    },
+    "toThrowErrorMatchingSnapshot": {
+        "prefix": "ttrer",
+        "body": ".toThrowErrorMatchingSnapshot($0)",
+        "description": "Use `.toThrowErrorMatchingSnapshot` to test that a function throws an error matching the most recent snapshot when it is called.",
+        "scope": "source.js"
+    },
+    "toThrowErrorMatchingInlineSnapshot": {
+        "prefix": "tterrin",
+        "body": ".toThrowErrorMatchingInlineSnapshot($0)",
+        "description": "Use `.toThrowErrorMatchingInlineSnapshot` to test that a function throws an error matching the most recent snapshot when it is called.",
+        "scope": "source.js"
+    }
+}

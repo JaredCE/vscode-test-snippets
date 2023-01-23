@@ -58,7 +58,7 @@
     "onLanguage:typescript"
   ],
   "devDependencies": {
-    "@types/vscode": "^1.74.0"
+    "@types/vscode": "^1.14.0"
   },
   "dependencies": {
     "lodash.merge": "^4.6.2"

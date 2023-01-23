@@ -1,10 +1,9 @@
 {
   "name": "javascript-test-snippets",
-  "description": "Code snippets for JavaScript testing frameworks in ES6 syntax",
+  "description": "Code snippets for JavaScript testing frameworks (mocha, jasmine and jest) in ES6 syntax",
   "version": "0.0.1",
   "displayName": "JavaScript Test Snippets",
   "publisher": "JaredE",
-  "icon": "images/jasmine.png",
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
@@ -15,7 +14,15 @@
   },
   "main": "./extension.js",
   "categories": [
+    "Programming Languages",
     "Snippets"
+  ],
+  "keywords": [
+    "javascript",
+    "mocha",
+    "jest",
+    "jasmine",
+    "testing"
   ],
   "contributes": {
     "configuration": {
@@ -55,5 +62,6 @@
   },
   "dependencies": {
     "lodash.merge": "^4.6.2"
-  }
+  },
+  "pricing": "Free"
 }
